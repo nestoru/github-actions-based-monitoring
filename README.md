@@ -1,5 +1,13 @@
 # Github Actions Based Monitoring
 GitHub Actions workflow that monitors external services availability.
+![Email and GitHub notifications sample](email_and_github_notification_sample.png)
+
+## Project structure
+├── .github
+│   └── workflows
+│       └── network_connectivity_tests.yml
+├── README.md
+└── email_and_github_notification_sample.png
 
 ## Monitored Services
 The strategy here to save money is to include all of your monitored services in the same github action and then report on them individually. At the time of this writing there is a publicly accessible SFTP server at test.rebex.net:22. Also at the time of this writing my personal site https://www.nestorurquiza.com is available. The github actions workflow file here in this project point to them.
